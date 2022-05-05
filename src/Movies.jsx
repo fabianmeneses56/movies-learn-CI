@@ -1,4 +1,5 @@
 export function Movies({ results }) {
+  console.log('hola')
   return (
     <>
       {results === null ? <h2>Te doy la bienvenida!</h2> : null}
