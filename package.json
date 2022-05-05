@@ -7,8 +7,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
+    "start-test": "SET NODE_ENV=test & vite",
     "test:coverage": "vitest --coverage",
-    "standard": "standard --fix"
+    "standard": "standard --fix",
+    "test:e2e": "npx cypress run"
   },
   "dependencies": {
     "react": "^18.0.0",
