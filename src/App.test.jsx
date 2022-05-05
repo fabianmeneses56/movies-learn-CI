@@ -8,7 +8,7 @@ import userEvent from '@testing-library/user-event'
 
 const user = userEvent.setup()
 
-describe.only('When a user uses the app', () => {
+describe('When a user uses the app', () => {
   beforeAll(() => server.listen({ onUnhandledRequest: 'error' }))
 
   afterAll(() => server.close())
