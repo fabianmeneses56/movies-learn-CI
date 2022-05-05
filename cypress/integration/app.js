@@ -1,4 +1,4 @@
-/* global cy */
+/* global cy,describe,it */
 
 describe('Movies', function () {
   it('frontpage can be opened', function () {
