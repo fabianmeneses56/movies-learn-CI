@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:coverage": "vitest --coverage",
-    "standard": "standard"
+    "standard": "standard --fix"
   },
   "dependencies": {
     "react": "^18.0.0",

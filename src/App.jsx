@@ -3,7 +3,7 @@ import { searchMovies } from './services/movies.js'
 import { Movies } from './Movies.jsx'
 import './App.css'
 
-function App() {
+function App () {
   const inputRef = useRef()
   const [results, setResults] = useState(null)
 

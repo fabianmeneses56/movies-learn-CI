@@ -1,0 +1,1 @@
+[![Deployment Pipeline](https://github.com/fabianmeneses56/movies-learn-CI/actions/workflows/pipeline.yml/badge.svg)](https://github.com/fabianmeneses56/movies-learn-CI/actions/workflows/pipeline.yml)
