@@ -3,7 +3,7 @@ import { searchMovies } from './services/movies.js'
 import { Movies } from './Movies.jsx'
 import './App.css'
 
-function App () {
+function App() {
   const inputRef = useRef()
   const [results, setResults] = useState(null)
 
@@ -16,7 +16,7 @@ function App () {
 
   return (
     <>
-      <h1>Buscador de películas</h1>
+      <h1>Buscador de películasssss</h1>
       <form data-testid='form' className='search' onSubmit={handleSubmit}>
         <input
           ref={inputRef}
