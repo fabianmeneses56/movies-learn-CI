@@ -1,8 +1,8 @@
-import fs from 'fs'
+const fs = require('fs')
 // import path from 'path'
-import express from 'express'
-import { createServer as createViteServer } from 'vite'
+const express = require('express')
 
+const { createServer: createViteServer } = require('vite')
 async function createServer() {
   const app = express()
 
