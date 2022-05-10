@@ -22,7 +22,7 @@ jobs:
       - name: Lint
         run: npm run standard
       - name: build
-        run: npm run build:server
+        run: npm run build:client
       - name: test
         run: npm test
       - name: Deploy to Heroku
