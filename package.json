@@ -6,6 +6,8 @@
   "scripts": {
     "start-dev": "vite",
     "build": "vite build",
+    "build:client": "vite build --outDir dist/client",
+    "build:server": "vite build --outDir dist/server --ssr src/entry-server.js ",
     "preview": "vite preview",
     "test": "vitest",
     "start-test": "SET NODE_ENV=test & vite",
