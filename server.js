@@ -6,7 +6,7 @@ import { createServer as createViteServer } from 'vite'
 async function createServer() {
   const app = express()
 
-  const resolve = p => path.resolve(__dirname, p)
+  //   const resolve = p => path.resolve(__dirname, p)
 
   // Create Vite server in middleware mode. This disables Vite's own HTML
   // serving logic and let the parent server take control.
