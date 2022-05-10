@@ -5,15 +5,14 @@ const { version } = require('./package.json')
 const { createServer: createViteServer } = require('vite')
 const app = express()
 
-app.get('/health', (req, res) => {
-  res.send('ok')
-})
-
-app.get('/version', (req, res) => {
-  res.send(version)
-})
-
 async function createServer() {
+  app.get('/health', (req, res) => {
+    res.send('ok')
+  })
+
+  app.get('/version', (req, res) => {
+    res.send(version)
+  })
   const vite = await createViteServer({
     server: { middlewareMode: 'ssr' }
   })
