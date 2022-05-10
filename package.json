@@ -41,5 +41,8 @@
       "error",
       "always"
     ]
-  }
+  },
+  "eslintIgnore": [
+    "dist"
+  ]
 }

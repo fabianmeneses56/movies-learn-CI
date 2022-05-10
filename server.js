@@ -1,18 +1,19 @@
 const fs = require('fs')
-// import path from 'path'
 const express = require('express')
+const { version } = require('./package.json')
 
 const { createServer: createViteServer } = require('vite')
+const app = express()
+
+app.get('/health', (req, res) => {
+  res.send('ok')
+})
+
+app.get('/version', (req, res) => {
+  res.send(version)
+})
+
 async function createServer() {
-  const app = express()
-
-  //   const resolve = p => path.resolve(__dirname, p)
-
-  // Create Vite server in middleware mode. This disables Vite's own HTML
-  // serving logic and let the parent server take control.
-  //
-  // In middleware mode, if you want to use Vite's own HTML serving logic
-  // use `'html'` as the `middlewareMode` (ref https://vitejs.dev/config/#server-middlewaremode)
   const vite = await createViteServer({
     server: { middlewareMode: 'ssr' }
   })
@@ -34,7 +35,7 @@ async function createServer() {
 
       const appHtml = await render(url)
 
-      const html = template.replace(`<!--ssr-outlet-->`, appHtml)
+      const html = template.replace('<!--ssr-outlet-->', appHtml)
 
       res.status(200).set({ 'Content-Type': 'text/html' }).end(html)
     } catch (e) {
