@@ -7,7 +7,7 @@
     "start-dev": "vite",
     "build": "vite build",
     "build:client": "vite build --outDir dist/client",
-    "build:server": "vite build --outDir dist/server --ssr src/entry-server.js ",
+    "build:server": "vite build --outDir dist/server --ssr src/entry-server.jsx",
     "preview": "vite preview",
     "test": "vitest",
     "start-test": "SET NODE_ENV=test & vite",
